@@ -43,10 +43,6 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <button className="nav-contact" onClick={() => scrollTo('Contact')}>
-        Contact
-      </button>
-
       <button className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
         <span /><span /><span />
       </button>
