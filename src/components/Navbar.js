@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import profileImg from '../assets/profile.jpg';
 
-const links = ['Home','About','Skills','Works','Contact'];
+const links = ['Home','About','Skills','Works'];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
