@@ -1,0 +1,68 @@
+.contact {
+  background: var(--bg);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  cursor: pointer;
+  transition: all .25s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact__card:hover {
+  border-color: var(--blue-dark);
+  box-shadow: 0 6px 24px rgba(42, 157, 200, 0.12);
+  transform: translateY(-2px);
+}
+
+.cc-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.cc-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--brown-3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.cc-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brown);
+}
+
+.cc-copy {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  background: var(--blue);
+  padding: 4px 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.cc-arrow {
+  margin-left: auto;
+  font-size: 18px;
+  color: var(--blue-dark);
+}

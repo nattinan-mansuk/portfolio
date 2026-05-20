@@ -1,0 +1,65 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #f7fbff;
+  --bg-2:     #eef7fd;
+  --bg-card:  #ffffff;
+  --blue:     #bde8fa;
+  --blue-mid: #7ecfef;
+  --blue-dark:#2a9dc8;
+  --yellow:   #ffec9f;
+  --yellow-dark:#e8c840;
+  --brown:    #3f372a;
+  --brown-2:  #6b5f4e;
+  --brown-3:  #a0937e;
+  --border:   rgba(63,55,42,0.1);
+  --shadow:   0 4px 24px rgba(63,55,42,0.08);
+  --font-d: "Quicksand", sans-serif;
+  --font-b: "Quicksand", sans-serif;
+  --ease: cubic-bezier(0.23,1,0.32,1);
+}
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  background: var(--bg);
+  color: var(--brown);
+  font-family: var(--font-b);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--blue); color: var(--brown); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-2); }
+::-webkit-scrollbar-thumb { background: var(--blue-dark); border-radius: 2px; }
+
+@keyframes fadeUp   { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn   { from{opacity:0} to{opacity:1} }
+@keyframes blink    { 0%,100%{opacity:1} 50%{opacity:0} }
+@keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+@keyframes marquee  { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes spin     { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+@keyframes pulse    { 0%,100%{opacity:.6;transform:scale(1)} 50%{opacity:1;transform:scale(1.08)} }
+
+.reveal {
+  opacity: 0; transform: translateY(22px);
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+.section { padding: 90px 8vw; }
+.section-tag {
+  display: inline-block; font-size: 14px; font-weight: 700; width: fit-content;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--blue-dark); background: var(--blue);
+  padding: 5px 14px; border-radius: 4px; margin-bottom: 14px;
+}
+.section-title {
+  font-family: var(--font-d); font-size: clamp(28px,4vw,46px);
+  font-weight: 800; letter-spacing: -1px; color: var(--brown);
+  margin-bottom: 10px;
+}
+.section-title span { color: var(--blue-dark); }
+.section-sub { font-size: 16px; color: var(--brown-2); }
+.section-header { text-align: center; margin-bottom: 56px; }
