@@ -21,8 +21,7 @@ export default function Footer() {
           </div>
           <div>
             <div className="fc-head">Links</div>
-            <a className="fc-item fc-link" href="https://nattinan.port.com" target="_blank" rel="noopener noreferrer">🌐 nattinan.port.com</a>
-            <a className="fc-item fc-link" href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+            <a className="fc-item fc-link" href="https://nattinan-mansuk.github.io/portfolio/" target="_blank" rel="noopener noreferrer">🌐 nattinan.port.com</a>
           </div>
           <div>
             <div className="fc-head">Education</div>

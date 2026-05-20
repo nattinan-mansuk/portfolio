@@ -47,7 +47,7 @@ export default function Contact() {
             <div className="cc-val">061-616-9669</div>
           </div>
         </div>
-        <a className="contact__card contact__card--link" href="https://nattinan.port.com" target="_blank" rel="noopener noreferrer">
+        <a className="contact__card contact__card--link" href="https://nattinan-mansuk.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
           <div>
             <div className="cc-label">
               <FontAwesomeIcon icon={faLink} /> Portfolio</div>
