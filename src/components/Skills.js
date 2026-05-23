@@ -77,16 +77,6 @@ export default function Skills() {
       <div className="section-header reveal">
         <span className="section-tag">Expertise</span>
         <h2 className="section-title">My <span>Skills</span></h2>
-        <p className="section-sub">Technologies and tools I work with</p>
-      </div>
-
-      {/* Legend */}
-      <div className="skills__legend reveal">
-        {Object.entries(levels).map(([k, v]) => (
-          <span key={k} className="legend-item" style={{ background: v.bg, color: v.color }}>
-            {v.label}
-          </span>
-        ))}
       </div>
 
       <div className="skills__groups">
@@ -101,7 +91,6 @@ export default function Skills() {
                 const lv = levels[item.level];
                 return (
                   <div className="skill-card" key={item.name}>
-                    <span className="skill-card__icon">{item.icon}</span>
                     <span className="skill-card__name">{item.name}</span>
                     {item.sub && <span className="skill-card__sub">{item.sub}</span>}
                     {lv && (
