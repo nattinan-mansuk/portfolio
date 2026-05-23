@@ -55,8 +55,8 @@ const groups = [
   {
     cat: 'Learning',
     items: [
-      { name: 'React', level: 'learning' },
-      { name: 'Tailwind', level: 'learning' },
+      { name: 'React' },
+      { name: 'Tailwind' },
     ],
   },
 ];
