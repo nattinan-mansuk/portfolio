@@ -20,10 +20,6 @@ export default function Footer() {
             <div className="fc-item"><FontAwesomeIcon icon={faLocationPin} /> Bang Kho Laem, Bangkok 10120</div>
           </div>
           <div>
-            <div className="fc-head">Links</div>
-            <a className="fc-item fc-link" href="https://nattinan-mansuk.github.io/portfolio/" target="_blank" rel="noopener noreferrer">🌐 nattinan.port.com</a>
-          </div>
-          <div>
             <div className="fc-head">Education</div>
             <div className="fc-item"><strong>Silpakorn University</strong></div>
             <div className="fc-item" style={{fontSize:'12px',marginTop:'2px'}}>B.S. Information &amp; Communication Technology<br/>Major: Game Design</div>

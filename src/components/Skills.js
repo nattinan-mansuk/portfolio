@@ -15,14 +15,12 @@ const groups = [
       { name: 'Bootstrap' },
       { name: 'JavaScript' },
       { name: 'jQuery' },
-      { name: 'React', level: 'learning' },
-      { name: 'Tailwind', level: 'learning' },
+      { name: 'Laravel', sub: 'Blade' },
     ],
   },
   {
     cat: 'Backend & DB',
     items: [
-      { name: 'Laravel', sub: 'Blade' },
       { name: 'WordPress', sub: 'Custom Plugins' },
       { name: 'MySQL' },
       { name: 'C#' },
@@ -39,13 +37,26 @@ const groups = [
     ],
   },
   {
-    cat: 'Libraries',
+    cat: 'Libraries (frequently used)',
     items: [
       { name: 'ECharts' },
       { name: 'Swiper.js' },
       { name: 'Slick Slider' },
       { name: 'ScrollMagic' },
       { name: 'Google Charts' },
+    ],
+  },
+  {
+    cat: 'Other',
+    items: [
+      { name: 'Unity (game engine)' }
+    ],
+  },
+  {
+    cat: 'Learning',
+    items: [
+      { name: 'React', level: 'learning' },
+      { name: 'Tailwind', level: 'learning' },
     ],
   },
 ];

@@ -42,10 +42,6 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-
-      <button className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
-        <span /><span /><span />
-      </button>
     </nav>
   );
 }

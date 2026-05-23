@@ -44,7 +44,7 @@ export default function Works() {
       <div className="section-header reveal">
         <span className="section-tag">Portfolio</span>
         <h2 className="section-title">My <span>Works</span></h2>
-        <p className="section-sub">Selected projects I've built and shipped</p>
+        <p className="section-sub">Just a part of the  projects I've built and shipped</p>
       </div>
 
       <div className="works__filters reveal">
